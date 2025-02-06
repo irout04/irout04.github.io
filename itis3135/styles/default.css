@@ -1,0 +1,34 @@
+body {
+    background-color: #FFEBF6; 
+    text-align: center;
+    color: #FF69B4; 
+    font-family: "Comic Sans MS", "Brush Script MT", cursive;
+}
+
+a {
+    color: #FFC0CB; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF1493; 
+}
+
+main {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 40%;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
