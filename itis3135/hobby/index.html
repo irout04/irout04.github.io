@@ -55,7 +55,7 @@
       <h2>When Inspiration Flows</h2>
       <p>Crafting can happen anytime, but I’ve found that some moments are perfect for creativity. Late nights often bring me fresh ideas Other times, I find that early mornings can be just as inspiring. Honestly, it doesn't matter if it’s the middle of the day or after midnight, whenever I feel like sketching a piece, I grab whatever I have around me and draw.</p>
 
-      <table border="1" cellpadding="5" cellspacing="0">
+      <table>
         <caption>Exploring Art Forms</caption>
         <thead>
           <tr>
@@ -167,19 +167,23 @@
 
   <!-- javaScript to hide all sections except the one clicked in the nav bar -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", () => {
       const navLinks = document.querySelectorAll("nav.internal-nav a");
       const sections = document.querySelectorAll("main section");
       
-      navLinks.forEach(link => {
-        link.addEventListener("click", function(e) {
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
           e.preventDefault();
-          const targetId = this.getAttribute("data-section");
+          const targetId = link.getAttribute("data-section");
+          
           // hide all sections
-          sections.forEach(section => section.classList.remove("active"));
+          sections.forEach((section) => {
+            section.classList.remove("active");
+          });
+          
           // show the selected section
           const targetSection = document.getElementById(targetId);
-          if(targetSection) {
+          if (targetSection) {
             targetSection.classList.add("active");
           }
         });
