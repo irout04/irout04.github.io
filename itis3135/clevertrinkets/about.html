@@ -36,8 +36,12 @@
     </nav>
 
     <footer>
-        <p>Page Built by <a href="intelligentraven.com/index.html">Intelligent Raven Enterprises</a> &copy; 2025</p>
+        <div data-include="../components/footer.html"></div>
     </footer>
+    
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    </script> <script src="../scripts/HTMLInclude.min.js"></script>
 
 </body>
 </html>
