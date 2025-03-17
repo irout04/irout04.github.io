@@ -5,11 +5,11 @@
 }
 
 body {
-  background-color: #DDFFF7;
+  background-color: #DDFFF7; 
   color: #861657;
   font-family: Futura, sans-serif;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px; 
 }
 
 header, nav, main, footer {
@@ -65,8 +65,8 @@ ul {
 section {
   display: none;
   width: 80%;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 20px auto; 
+  padding: 15px; 
   background-color: #fffaf0;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -87,7 +87,7 @@ section p {
   margin: 10px auto;
   max-width: 800px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   font-size: 1.1rem;
 }
 
