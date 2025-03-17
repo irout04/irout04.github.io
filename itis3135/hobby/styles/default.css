@@ -1,109 +1,160 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    background-color: #DDFFF7;
-    color: #861657;
-    font-family: Arial, sans-serif;
-  }
-  header, nav, main, footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-  }
-  header {
-    background-color: #cce7e8;
-    border-bottom: 2px solid #88bcbc;
-    padding: 20px;
-    text-align: center;
-  }
-  header h1 {
-    font-size: 2.5rem;
-    color: #2b3d4f;
-  }
-  nav {
-    background-color: #FFA69E;
-    text-align: center;
-    padding: 10px;
-  }
-  nav a {
-    color: #861657;
-    text-decoration: none;
-    margin: 0 8px;
-    font-weight: bold;
-    padding: 5px;
-  }
-  nav a:hover,
-  nav a:focus,
-  nav a:active {
-    background-color: transparent;
-    text-decoration: none;
-  }
-  main {
-    margin: 20px 0;
-  }
-  section {
-    display: none;
-    padding: 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  section.active {
-    display: block;
-  }
-  section h2 {
-    margin-bottom: 10px;
-    color: #2b3d4f;
-    text-align: center;
-  }
-  section p {
-    margin-bottom: 10px;
-  }
-  figure {
-    margin: 10px 0;
-    text-align: center;
-  }
-  figure img {
-    max-width: 300px;
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-  figure figcaption {
-    font-style: italic;
-    font-size: 0.9rem;
-    margin-top: 5px;
-  }
-  figure + p.ai-prompt {
-    font-style: italic;
-    color: #555;
-    font-size: 0.8rem;
-  }
-  footer {
-    background-color: #cce7e8;
-    border-top: 2px solid #88bcbc;
-    padding: 20px;
-    text-align: center;
-  }
-  footer p {
-    margin-bottom: 10px;
-  }
-  .validation-buttons a,
-  .validation-buttons img {
-    display: inline-block;
-    margin: 0 5px;
-    padding: 8px 12px;
-    background-color: #2b3d4f;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 0.9rem;
-  }
-  .validation-buttons a:hover {
-    background-color: #3c5a70;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DDFFF7;
+  color: #861657;
+  font-family: Futura, sans-serif;
+}
+
+header, nav, main, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header {
+  background-color: #cce7e8;
+  border-bottom: 2px solid #88bcbc;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2b3d4f;
+}
+
+nav {
+  background-color: #FFA69E;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #861657;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+main {
+  margin: 20px 0;
+}
+
+ul { 
+  list-style: disc outside; 
+  text-align: left; 
+}
+
+section {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+section.active {
+  display: block;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #2b3d4f;
+  text-align: center;
+}
+
+section p {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+figure {
+  margin: 20px auto;
+  text-align: center;
+}
+
+figure img {
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+figure figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+figure + p.ai-prompt {
+  font-style: italic;
+  color: #555;
+  font-size: 0.8rem;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+table {
+  margin: 20px auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #FFA69E;
+  color: #861657;
+}
+
+table caption {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2b3d4f;
+}
+
+footer {
+  background-color: #cce7e8;
+  border-top: 2px solid #88bcbc;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.validation-buttons a, .validation-buttons img {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #2b3d4f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.validation-buttons a:hover {
+  background-color: #3c5a70;
+}
