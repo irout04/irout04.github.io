@@ -8,30 +8,32 @@ body {
   background-color: #DDFFF7;
   color: #861657;
   font-family: Futura, sans-serif;
+  text-align: center;
+  font-size: 18px;
 }
 
 header, nav, main, footer {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 10px;
+  text-align: center;
 }
 
 header {
   background-color: #cce7e8;
   border-bottom: 2px solid #88bcbc;
   padding: 20px;
-  text-align: center;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #2b3d4f;
 }
 
 nav {
   background-color: #FFA69E;
-  text-align: center;
   padding: 10px;
+  margin-top: 10px; 
 }
 
 nav a {
@@ -40,11 +42,10 @@ nav a {
   margin: 0 8px;
   font-weight: bold;
   padding: 5px;
+  font-size: 1.1rem;
 }
 
-nav a:hover,
-nav a:focus,
-nav a:active {
+nav a:hover, nav a:focus, nav a:active {
   background-color: transparent;
   text-decoration: none;
 }
@@ -56,6 +57,9 @@ main {
 ul {
   list-style: disc outside;
   text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1rem;
 }
 
 section {
@@ -63,7 +67,7 @@ section {
   width: 80%;
   margin: 40px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #fffaf0;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
@@ -76,16 +80,15 @@ section.active {
 section h2 {
   margin-bottom: 10px;
   color: #2b3d4f;
-  text-align: center;
+  font-size: 2rem;
 }
 
 section p {
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
   max-width: 800px;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 figure {
@@ -94,7 +97,8 @@ figure {
 }
 
 figure img {
-  max-width: 300px;
+  max-width: 350px;
+  width: 100%;
   height: auto;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -102,28 +106,30 @@ figure img {
 
 figure figcaption {
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 5px;
 }
 
 figure + p.ai-prompt {
   font-style: italic;
   color: #555;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   max-width: 800px;
   margin: 10px auto;
-  text-align: left;
+  text-align: center;
 }
 
 table {
   margin: 20px auto;
-  width: 80%;
+  width: 60%;
   border-collapse: collapse;
+  font-size: 1.1rem;
 }
 
 table th, table td {
   padding: 12px;
   text-align: center;
+  border: 1px solid #ccc;
 }
 
 table th {
@@ -134,7 +140,7 @@ table th {
 table caption {
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #2b3d4f;
 }
 
@@ -147,6 +153,7 @@ footer {
 
 footer p {
   margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .validation-buttons a, .validation-buttons img {
