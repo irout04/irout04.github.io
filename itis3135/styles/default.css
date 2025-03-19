@@ -79,6 +79,65 @@ figure, figcaption, em {
     font-style: normal;
 }
 
+form {
+    background-color: #ffe3ec;
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+fieldset {
+    border: 1px solid #FF1493;
+    border-radius: 6px;
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+ 
+legend {
+    font-weight: bold;
+    color: #FF1493;
+    padding: 0 0.5em;
+}
+.form-group {
+    margin-bottom: 1.2em;
+    text-align: left;
+}
+  
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    color: #FF1493;
+}
+  
+input[type="reset"], input[type="submit"] {
+    background-color: #C2185B;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: #AD1457;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 100%;
+    background-color: #FFEBF6;;
+    border: 1px solid #FF1493;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive;
+    color: #FF1493;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
         font-size: 18px;

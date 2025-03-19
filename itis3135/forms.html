@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms - Clever Trinkets</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>HTML Forms - Clever Trinkets</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required size="30" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required size="30" placeholder="e.g., 123-456-7890">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required size="30" placeholder="you@example.com">
+      </div>
+      <fieldset>
+        <legend>Products You Like</legend>
+        <div class="form-group">
+          <input type="checkbox" id="trinket1" name="trinkets" value="Trinket A">
+          <label for="trinket1">Moonlit Trinket</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="trinket2" name="trinkets" value="Trinket B">
+          <label for="trinket2">Sparkling Charm</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="trinket3" name="trinkets" value="Trinket C">
+          <label for="trinket3">Mystic Relic</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <div class="form-group">
+          <input type="radio" id="contactEmail" name="contactMethod" value="Email" required>
+          <label for="contactEmail">Email</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="contactPhone" name="contactMethod" value="Phone" required>
+          <label for="contactPhone">Phone</label>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <label for="orderPriority">Order Priority:</label>
+        <select id="orderPriority" name="orderPriority" required>
+          <option value="">Select Priority</option>
+          <option value="low">Low Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+</script>
+<script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
