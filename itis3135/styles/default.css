@@ -1,17 +1,17 @@
 body {
     background-color: #FFEBF6; 
     text-align: center;
-    color: #FF69B4; 
+    color:#FF1493; 
     font-family: "Comic Sans MS", "Brush Script MT", cursive;
 }
 
 a {
-    color: #FFC0CB; 
+    color: #FF69B4;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FF1493; 
+    color: #FF1493;  
 }
 
 main {
@@ -25,19 +25,58 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-align: left;
+    color: #FF1493;  
+    margin-top: 2rem;
+}
+
 img {
     width: 40%;
 }
 
 figure {
     text-align: center;
-    font-style: italic;
 }
 
 footer {
     margin-top: 20px;
     font-size: 15px;
-    color: #FF69B4;
+    color: #FF1493; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+    color:  #FF1493;
+}
+
+thead tr {
+    background-color: #ffd6e7;
+    color:  #FF1493;
+}
+
+tbody tr:nth-child {
+    background-color: #ffe3ec;
+}
+
+tfoot tr {
+    background-color: #ffd6e7;
+    font-weight: bold;
+}
+
+figure, figcaption, em {
+    font-style: normal;
 }
 
 @media screen and (min-width: 981px) and (max-width: 1400px) {
