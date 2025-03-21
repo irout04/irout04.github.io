@@ -1,7 +1,7 @@
 body {
     background-color: #FFEBF6; 
     text-align: center;
-    color:#FF1493; 
+    color: #FF1493; 
     font-family: "Comic Sans MS", "Brush Script MT", cursive;
 }
 
@@ -58,21 +58,51 @@ table, th, td {
 th, td {
     padding: 0.5rem;
     text-align: left;
-    color:  #FF1493;
+    color: #FF1493;
 }
 
 thead tr {
     background-color: #ffd6e7;
-    color:  #FF1493;
+    color: #FF1493;
 }
 
-tbody tr:nth-child {
-    background-color: #ffe3ec;
+table.complex {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    text-align: left; 
 }
 
-tfoot tr {
+table.complex, table.complex th, table.complex td {
+    border: 1px solid #000;
+}
+
+table.complex th, table.complex td {
+    padding: 0.5rem;
+    text-align: left;
+    color: #FF1493;
+}
+
+table.complex thead tr {
+    background-color: #ffd6e7; 
+    color: #FF1493;
+}
+
+table.complex tbody tr:nth-child(odd) {
+    background-color: #fad2df;
+}
+
+table.complex tbody tr:nth-child(even) {
+    background-color: #fce4ec;  
+}
+
+table.complex tfoot tr {
     background-color: #ffd6e7;
     font-weight: bold;
+}
+
+table.complex tbody td[rowspan] {
+    background-color: #ffd6e7;
 }
 
 figure, figcaption, em {
@@ -100,6 +130,7 @@ legend {
     color: #FF1493;
     padding: 0 0.5em;
 }
+
 .form-group {
     margin-bottom: 1.2em;
     text-align: left;
