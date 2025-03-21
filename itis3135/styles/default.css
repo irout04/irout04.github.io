@@ -1,17 +1,17 @@
 body {
-    background-color: #FFEBF6; 
+    background-color: #ffebf6;
     text-align: center;
     color: #FF1493; 
     font-family: "Comic Sans MS", "Brush Script MT", cursive;
 }
 
 a {
-    color: #FF69B4;
+    color: #f285aa;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FF1493;  
+    color:#FF1493; 
 }
 
 main {
@@ -89,11 +89,11 @@ table.complex thead tr {
 }
 
 table.complex tbody tr:nth-child(odd) {
-    background-color: #fad2df;
+    background-color: #ffd6e7;
 }
 
 table.complex tbody tr:nth-child(even) {
-    background-color: #fce4ec;  
+    background-color: #ffebf6; 
 }
 
 table.complex tfoot tr {
