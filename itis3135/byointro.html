@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYO Intro - Your Introduction Page</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>BYO Intro</h2>
+    <h3 class="centered-h3">Time to create your own introduction page!</h3>
+    <form id="byoForm" onsubmit="handleSubmit(event)" novalidate>
+  
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required value="Ishita Rout">
+      </div>
+
+      <div class="form-group">
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" name="mascot" required value="Intelligent Raven">
+      </div>
+
+      <div class="form-group">
+        <label for="image">Upload Image (PNG or JPG):</label>
+        <input type="file" id="image" name="image" accept="image/png, image/jpeg" required>
+      </div>
+
+      <div class="form-group">
+        <label for="imageCaption">Image Caption:</label>
+        <input type="text" id="imageCaption" name="imageCaption" required value="My awesome picture">
+      </div>
+  
+      <div class="form-group">
+        <label for="personalBackground">Personal Background:</label>
+        <textarea id="personalBackground" name="personalBackground" required placeholder="Tell us about yourself">I love going to the gym.</textarea>
+      </div>
+ 
+      <div class="form-group">
+        <label for="professionalBackground">Professional Background:</label>
+        <textarea id="professionalBackground" name="professionalBackground" required placeholder="Your work experience">ITSC 1212 TA.</textarea>
+      </div>
+     
+      <div class="form-group">
+        <label for="academicBackground">Academic Background:</label>
+        <textarea id="academicBackground" name="academicBackground" required placeholder="Your academic achievements">B.S in Computer Science with a concentration in Data Science and minor in Mathematics</textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="webBackground">Background in Web Development:</label>
+        <textarea id="webBackground" name="webBackground" required placeholder="Your experience in web development">Little experience front-end development experience.</textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="computerPlatform">Primary Computer Platform:</label>
+        <input type="text" id="computerPlatform" name="computerPlatform" required value="Mac OS">
+      </div>
+    
+      <div class="form-group" id="coursesSection">
+        <label>Courses Currently Taking:</label>
+        <div id="coursesContainer"></div>
+        <button type="button" onclick="addCourseField()">Add Course</button>
+      </div>
+
+      <div class="form-group">
+        <label for="funnyThing">Funny thing?</label>
+        <input type="text" id="funnyThing" name="funnyThing" placeholder="Share something funny">
+      </div>
+ 
+      <div class="form-group">
+        <label for="anythingElse">Anything else?</label>
+        <input type="text" id="anythingElse" name="anythingElse" placeholder="Additional information">
+      </div>
+  
+      <div class="form-group">
+        <input type="checkbox" id="agreeCheckbox" name="agreeCheckbox" required>
+        <label for="agreeCheckbox">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+      </div>
+  
+      <div class="form-group">
+        <input type="reset" value="Reset" onclick="resetForm()">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+</script>
+<script src="scripts/HTMLInclude.min.js"></script>
+<script src="scripts/survey.js"></script>
+</html>

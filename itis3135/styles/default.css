@@ -31,6 +31,10 @@ h3 {
     margin-top: 2rem;
 }
 
+.centered-h3 {
+    text-align: center;
+}
+
 img {
     width: 40%;
 }
@@ -157,9 +161,9 @@ input[type="reset"]:hover, input[type="submit"]:hover {
     background-color: #AD1457;
 }
 
-input[type="text"], input[type="tel"], input[type="email"], select {
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
     width: 100%;
-    background-color: #FFEBF6;;
+    background-color: #FFEBF6;
     border: 1px solid #FF1493;
     padding: 0.5em;
     margin-bottom: 1em;
