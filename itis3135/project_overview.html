@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kickride Project Overview</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  body {
+    background-color: #ffebf6;
+    color: #FF1493;
+    font-family: "Comic Sans MS", "Brush Script MT", cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #f285aa;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #FF1493;
+  }
+
+  .proposal-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .proposal-content h1, .proposal-content h2, .proposal-content h3 {
+    text-align: center;
+    color: #FF1493;
+    margin: 1.5rem 0 1rem;
+  }
+
+  .proposal-content h2 { margin-top: 2rem; }
+  .proposal-content h3 { margin-top: 1.5rem; }
+
+  .proposal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .proposal-content ul li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .proposal-content img {
+    width: 70%;
+    display: block;
+    margin: 0.5rem auto;
+  }
+  .proposal-content figure {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  @media screen and (min-width: 981px) and (max-width: 1400px) {
+    body { font-size: 18px; }
+  }
+  @media screen and (min-width: 601px) and (max-width: 980px) {
+    body { font-size: 16px; }
+  }
+  @media screen and (min-width: 370px) and (max-width: 600px) {
+    body { font-size: 14px; }
+    img { width: 80%; }
+    main { width: 95%; }
+  }
+</style>
+
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main class="proposal-content">
+    <h1>Kickride Project Overview</h1>
+
+    <h2>Website Plan</h2>
+    <ul>
+      <li>This website is being developed to promote Kickride, an electric bike‑sharing platform for the Bahamas.</li>
+      <li>Intended users:city commuters, tourists, and local businesses.</li>
+      <li>The site will include: Home, About Us, Services, How to Book Us, and Contact pages.</li>
+    </ul>
+
+    <h2>Client Information</h2>
+    <ul>
+      <li><strong>Name:</strong> Kick</li>
+      <li><strong>Organization:</strong> Kickride Co.</li>
+      <li><strong>Email:</strong> kennyfountain1777@outlook.com</li>
+      <li><strong>Phone:</strong> (242) 424‑1777</li>
+    </ul>
+
+    <h2>Wireframe</h2>
+    <figure>
+      <img src="project/images/wireframe.png" alt="Kickride Wireframe">
+      <figcaption>Figure 1: Kickride homepage wireframe</figcaption>
+    </figure>
+
+    <h2>Site Map</h2>
+    <figure>
+      <img src="project/images/sitemap.png" alt="Kickride Site Map">
+      <figcaption>Figure 2: Kickride site map</figcaption>
+    </figure>
+
+    <h2>Page Design</h2>
+
+    <h3>Home</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Main landing page and brand intro.</li>
+      <li><strong>Audience:</strong> All visitors (locals &amp; tourists).</li>
+      <li><strong>Content:</strong> Welcome message and featured bike image</li>
+      <li><strong>Interactivity:</strong> Image slideshow of a bike.</li>
+    </ul>
+
+    <h3>About Us</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Company background &amp; mission.</li>
+      <li><strong>Audience:</strong> Prospective riders &amp; partners.</li>
+      <li><strong>Content:</strong> Story of Kickride, user‑group cards (Tourists, Commuters, Families).</li>
+    </ul>
+
+    <h3>Services</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Explain rental plans &amp; pricing.</li>
+      <li><strong>Audience:</strong> Local commuters, day‑tripping tourists, event organizers.</li>
+      <li><strong>Content:</strong> Pay‑As‑You‑Go, Day Pass, Monthly, Corporate &amp; Event packages.</li>
+    </ul>
+
+    <h3>How to Book Us</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Guide users through booking.</li>
+      <li><strong>Audience:</strong> Riders ready to reserve a bike or scooter.</li>
+      <li><strong>Content:</strong> 3‑step process with images: Pick, Scan &amp; Pay, Ride &amp; Return.</li>
+      <li><strong>Interactivity:</strong> Anchor link “Get Started” scrolls to steps.</li>
+    </ul>
+
+    <h3>Contact</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Inquiries &amp; support.</li>
+      <li><strong>Audience:</strong> Anyone with questions or feedback.</li>
+      <li><strong>Content:</strong> Contact info, email/phone links, and a submission form.</li>
+      <li><strong>Validation:</strong> Client‑side required fields &amp; AJAX form submit.</li>
+    </ul>
+
+    <h2>Dynamic Functionality</h2>
+    <ul>
+      <li><a href="https://developers.google.com/maps/documentation/javascript/overview">Google Maps API</a> – show station locations on an interactive map.</li>
+      <li><a href="https://jqueryvalidation.org/">jQuery Validation</a> – validate the contact form before submit.</li>
+      <li><a href="https://jqueryui.com/dialog/">jQuery UI Dialog</a> – use a modal for “Reserve Now” on the booking page.</li>
+      <li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a> – optional image lightbox on the Home page slideshow.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    document.getElementById("validation_link_html")
+      .setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+  </script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
