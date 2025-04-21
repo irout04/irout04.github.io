@@ -59,34 +59,36 @@ main {
   margin: 2rem auto;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: 'Playfair Display', serif;
   color: #333333;
-}
-
-h1 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 h2 {
+  font-family: 'Playfair Display', serif;
+  color: #333333;
   font-size: 2rem;
   text-align: center;
   margin: 1.5rem 0 1rem;
 }
 
-.section-left h2 {
+.section-left {
   text-align: left;
 }
 
 h3 {
+  font-family: 'Playfair Display', serif;
+  color: #333333;
   font-size: 1.5rem;
   text-align: left;
   margin: 1rem 0 0.5rem;
 }
 
 .card {
+  box-sizing: border-box;
   background: #C0E218;
   color: #333333;
   border-radius: 8px;
@@ -98,7 +100,7 @@ h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
+.card {
   margin-bottom: 1rem;
 }
 
@@ -110,7 +112,7 @@ h3 {
 }
 
 .card img {
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   height: auto;
   margin: 1rem auto;
@@ -158,13 +160,14 @@ form {
   margin-bottom: 0.5rem;
 }
 
-input[type="text"], input[type="email"],
-textarea {
+input[type="text"], input[type="email"], textarea {
+  box-sizing: border-box;
   width: 100%;
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 
 button, input[type="submit"], input[type="reset"] {
   background: #C0E218;
@@ -212,10 +215,6 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
     border-radius: 8px;
 }
   
-.booking-steps h2 {
-    color: #fff;          
-}
-  
 .step {
     background: #F7FFF7;     
 }
@@ -234,6 +233,7 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
 }
 
 .step {
+  box-sizing: border-box;
   background: #F7FFF7;
   border-radius: 6px;
   padding: 1rem;
@@ -278,21 +278,14 @@ footer {
   padding: 1rem 0;
   margin-top: auto;
 }
-
-.about-section .card {
-    text-align: center;
-}
   
-.about-section .card h3, .about-section .card p {
-    text-align: center;
+.text-center {
+  text-align: center;
 }  
 
 .contact-info {
   text-align: center;
   margin-bottom: 2rem;
-}
-
-.contact-info h2 {
   margin-bottom: 1rem;
 }
 
@@ -302,33 +295,26 @@ footer {
   line-height: 1.5;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  .navbar ul { flex-wrap: wrap; }
-}
-
 @media screen and (min-width: 981px) and (max-width: 1400px) {
-    body {
-        font-size: 18px;
-    }
+  body {
+      font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 980px) {
-    body {
-        font-size: 16px;
-    }
+  body {
+      font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 370px) and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-    img {
-        width: 80%;
-    }
-    main {
-        width: 95%;
-    }
+  body {
+      font-size: 14px;
+  }
+  img {
+      width: 80%;
+  }
+  main {
+      width: 95%;
+  }
 }
