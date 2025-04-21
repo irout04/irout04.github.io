@@ -47,8 +47,7 @@ header {
   border-radius: 4px;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover, .navbar .active {
   background: #A8C920;
   color: #ffffff;
 }
