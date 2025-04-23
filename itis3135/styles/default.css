@@ -189,6 +189,7 @@ input[type="text"], input[type="tel"], input[type="email"], select, textarea {
 .mySlides {
   display: none;
 }
+
 .mySlides img {
   width: 100%;
   height: auto;
@@ -212,6 +213,7 @@ input[type="text"], input[type="tel"], input[type="email"], select, textarea {
   user-select: none;
   z-index: 1;
 }
+
 .prev { left: -40px; }
 .next { right: -40px; }
  
@@ -229,6 +231,7 @@ input[type="text"], input[type="tel"], input[type="email"], select, textarea {
   overflow-x: auto;
   margin: 1rem 0;
 }
+
 .thumbnail-demo {
   width: 60px;
   cursor: pointer;
@@ -238,6 +241,20 @@ input[type="text"], input[type="tel"], input[type="email"], select, textarea {
   box-sizing: border-box;
 }
 
+#sketch-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+#sketch-wrapper {
+    display: inline-block; 
+    border: 2px solid #FFC0CB;
+    background: #FFF0F5;
+}
+
+  #sketch-wrapper canvas {
+    display: block;
+}
  
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
