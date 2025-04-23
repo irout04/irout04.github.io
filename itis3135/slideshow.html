@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ITIS 3135 – Ishita Rout Slideshow</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Slideshow Gallery</h2>
+    <p class="tagline">
+      A slideshow of items for each letter in my full name, Ishita Rout.
+    </p>
+
+    <div class="slideshow-container">
+      <div class="mySlides"><img src="images/icecream2.jpg" alt="I – Ice Cream"></div>
+      <div class="mySlides"><img src="images/sunset.jpg" alt="S – Sunset"></div>
+      <div class="mySlides"><img src="images/hibiscus.jpg" alt="H – Hibiscus"></div>
+      <div class="mySlides"><img src="images/icedcoffee2.jpg" alt="I – Iced Coffee"></div>
+      <div class="mySlides"><img src="images/trees2.jpg" alt="T – Trees"></div>
+      <div class="mySlides"><img src="images/aquarium.jpg" alt="A – Aquarium"></div>
+      <div class="mySlides"><img src="images/roses.jpg" alt="R – Roses"></div>
+      <div class="mySlides"><img src="images/ocean.jpeg" alt="O – Ocean"></div>
+      <div class="mySlides"><img src="images/university.jpg" alt="U – University"></div>
+      <div class="mySlides"><img src="images/tacos2.jpg" alt="T – Tacos"></div>
+
+      <div class="prev" onclick="plusSlides(-1)">❮</div>
+      <div class="next" onclick="plusSlides(1)">❯</div>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+    <div class="thumbnail-list">
+      <img class="thumbnail-demo" src="images/icecreamr.jpg"   onclick="currentSlide(1)"  alt="I – Ice Cream">
+      <img class="thumbnail-demo" src="images/sunsetr.jpeg"      onclick="currentSlide(2)"  alt="S – Sunset">
+      <img class="thumbnail-demo" src="images/hibiscusr.jpg"    onclick="currentSlide(3)"  alt="H – Hibiscus">
+      <img class="thumbnail-demo" src="images/icedcoffeer.jpg"  onclick="currentSlide(4)"  alt="I – Iced Coffee">
+      <img class="thumbnail-demo" src="images/treesr.jpg"       onclick="currentSlide(5)"  alt="T – Trees">
+      <img class="thumbnail-demo" src="images/aquariumr.jpg"    onclick="currentSlide(6)"  alt="A – Aquarium">
+      <img class="thumbnail-demo" src="images/rosesr.jpg"       onclick="currentSlide(7)"  alt="R – Roses">
+      <img class="thumbnail-demo" src="images/oceanr.jpeg"      onclick="currentSlide(8)"  alt="O – Ocean">
+      <img class="thumbnail-demo" src="images/universityr.jpg"  onclick="currentSlide(9)"  alt="U – University">
+      <img class="thumbnail-demo" src="images/tacosr.jpg"       onclick="currentSlide(10)" alt="T – Tacos">
+    </div>
+
+    <section class="notes">
+      <h3>Notes</h3>
+      <h4>Sources of Help</h4>
+      <p>
+        Site: <a href="https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp" target="_blank">
+          W3Schools Slideshow Tutorial
+        </a>
+      </p>
+      <h4>Challenges</h4>
+      <p>Getting all images to scale nicely was tricky but I added CSS constraints to fix it.</p>
+      <h4>Academic Integrity</h4>
+      <p>
+        I claim that this assignment is all my work and I did not copy and paste someone else's code.
+      </p>
+      <p><em><i>Signed, Ishita Rout, 04/22/2025 11:00 PM</i></em></p>
+    </section>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/slideshow.js"></script>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

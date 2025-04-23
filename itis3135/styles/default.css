@@ -172,6 +172,72 @@ input[type="text"], input[type="tel"], input[type="email"], select, textarea {
     font-family: "Comic Sans MS", cursive;
     color: #FF1493;
 }
+
+.tagline {
+    text-align: center;
+    margin-bottom: 1.0rem;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 400px;          
+  margin: 2rem auto;
+  background: #fff;
+  overflow: visible;        
+}
+
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: #FF1493;
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+}
+.prev { left: -40px; }
+.next { right: -40px; }
+ 
+.caption-container {
+  text-align: center;
+  background-color:#fff; 
+  color: #FF1493;
+  padding: 6px 0;
+}
+
+.thumbnail-list {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.thumbnail-demo {
+  width: 60px;
+  cursor: pointer;
+  opacity: 0.6;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
  
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
