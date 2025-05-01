@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Kickride – Home</title>
   <link rel="stylesheet" href="styles/default.css">
+  <script src="scripts/homeslideshow.js"></script>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <header>
@@ -23,10 +25,16 @@
 
   <main>
     <h1>Home</h1>
+      <section class="card">
+        <h2>Welcome to Kickride!</h2>
+          <div class="slideshow-container">
+          <div class="mySlides fade"><img src="images/kickride.png" alt="Kickride scene 1"></div>
+          <div class="mySlides fade"><img src="images/slideshow.jpg" alt="Kickride scene 2"></div>
+          <div class="mySlides fade"><img src="images/slideshow2.jpg" alt="Kickride scene 3"></div>
 
-    <section class="card">
-      <h2>Welcome to Kickride!</h2>
-      <img src="images/kickride.png" alt="Kickride electric bike" class="card-img">
+          <button class="prev" aria-label="previous slide" onclick="plusSlides(-1)">❮</button>
+          <button class="next" aria-label="next slide"     onclick="plusSlides(1)">❯</button>
+          </div>
       <p>
         We’re on a journey to make urban travel in the Bahamas cleaner, cheaper, and more joyful.
         By replacing short car trips with electric rides, we cut carbon emissions and clear out

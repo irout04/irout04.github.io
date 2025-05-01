@@ -339,6 +339,47 @@ footer {
   font-size: 0.95rem;
 }
 
+.slideshow-container{
+  position:relative;
+  max-width:100%;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+.mySlides{
+  display:none;
+  text-align:center;
+}
+
+.mySlides img{
+  width:100%;
+  height:auto;
+  border-radius:6px;
+}
+
+.prev,
+.next{
+  cursor:pointer;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  padding:10px 16px;
+  font-size:32px;
+  color:#fff;
+  background:rgba(0,0,0,.45);
+  border:none;
+  border-radius:4px;
+  user-select:none;
+}
+
+.prev{left:10px;}
+.next{right:10px;}
+
+.prev:hover,
+.next:hover{
+  background:rgba(0,0,0,.75);
+}
+
 @media screen and (min-width: 981px) and (max-width: 1400px) {
   body {
       font-size: 18px;
